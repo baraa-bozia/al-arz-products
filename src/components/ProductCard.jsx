@@ -11,8 +11,8 @@ const Card = styled.div`
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* يخلي البوتون ينزل للأسفل */
-    min-height: 300px;  /* ارتفاع أصغر */
+  justify-content: space-between; 
+    min-height: 300px; 
 
   &:hover { transform: scale(1.03); }
 `;
