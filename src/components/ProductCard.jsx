@@ -5,7 +5,6 @@ import styled from "styled-components";
 const Card = styled.div`
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
   padding: 16px;
   text-align: center;
   transition: transform 0.2s;
@@ -13,6 +12,7 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: space-between; 
     min-height: 300px; 
+  cursor: pointer;
 
   &:hover { transform: scale(1.03); }
 `;
@@ -22,6 +22,9 @@ const ProductImage = styled.img`
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
+  
+ 
+  
 `;
 
 const ProductName = styled.h3`
@@ -52,13 +55,13 @@ export default function ProductCard({ product }) {
   const navigate = useNavigate();
 
   return (
-    <Card>
+    <Card onClick={() => navigate(`/product/${product.id}`)}>
       <ProductImage src={product.image} alt={product.name} />
       <ProductName>{product.name}</ProductName>
       <ProductDesc>{product.desc}</ProductDesc>
-      <Button onClick={() => navigate(`/product/${product.id}`)}>
+      {/* <Button onClick={() => navigate(`/product/${product.id}`)}>
         عرض المنتج
-      </Button>
+      </Button> */}
     </Card>
   );
 }

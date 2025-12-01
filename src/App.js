@@ -27,13 +27,16 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductsPage from "./pages/ProductPage";
 import ProductDetail from "./pages/ProductDetail";
-
+import { products } from "./products/products";
+import ProductModal from "./components/ProductModal";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ProductsPage />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/" element={<ProductsPage products={products}/>} />
+        {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
+                {/* <Route path="/product/:id" element={<ProductModal />} /> */}
+
       </Routes>
     </Router>
   );
