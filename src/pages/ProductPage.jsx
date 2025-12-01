@@ -58,10 +58,15 @@ const DropdownItem = styled.li`
 
 const BannerImage = styled.img`
   width: 100%;
-  max-height: 250px; 
+  height: 250px; 
   object-fit: cover;
   border-radius: 10px;
   margin-top: 20px;
+  @media (max-width: 600px) {
+  background-size: cover;
+  width: 110%;
+
+}
 `;
 
 export default function ProductsPage() {
