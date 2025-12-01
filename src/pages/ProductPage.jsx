@@ -62,9 +62,15 @@ const BannerImage = styled.img`
   object-fit: cover;
   border-radius: 10px;
   margin-top: 20px;
+
+  
   @media (max-width: 600px) {
   background-size: cover;
   width: 110%;
+    overflow: hidden; 
+
+    transform: translateX(-5%); 
+
 
 }
 `;
