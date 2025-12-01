@@ -58,15 +58,16 @@ const DropdownItem = styled.li`
 
 const BannerImage = styled.img`
   width: 100%;
-  height: 250px; 
+  height: auto; 
   object-fit: cover;
   border-radius: 10px;
   margin-top: 20px;
 
   
   @media (max-width: 600px) {
-  object-position: center;
-    height: 230px;
+    height: 170px;
+      object-position: center;
+
 
 
 
