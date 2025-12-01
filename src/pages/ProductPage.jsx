@@ -65,11 +65,9 @@ const BannerImage = styled.img`
 
   
   @media (max-width: 600px) {
-  background-size: cover;
-  width: 110%;
-    overflow: hidden; 
+  object-position: center;
+    height: 230px;
 
-    transform: translateX(-5%); 
 
 
 }
