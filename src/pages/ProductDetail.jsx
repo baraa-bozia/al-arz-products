@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
 `;
@@ -36,6 +36,7 @@ const Button = styled.button`
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
+  width:100px;
   &:hover { background: #3969a8ff; }
 `;
 

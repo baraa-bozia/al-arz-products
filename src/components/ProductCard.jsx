@@ -19,14 +19,14 @@ const Card = styled.div`
 
 const ProductImage = styled.img`
   width: 100%;
-  height: 290px;
+  height: 250px;
   object-fit: cover;
   border-radius: 8px;
 `;
 
 const ProductName = styled.h3`
   color: #194e91;
-  margin-top: 12px;
+  margin-top: 10px;
   font-size: 1.2rem;
 `;
 

@@ -99,17 +99,17 @@ export default function ProductsPage() {
 <BannerImage src="/images/Al_ARZ.png" alt="منتجاتنا" />
 
       <div ref={singleRef}>
-        <h2 style={{color:"#1D4F90",textAlign:"center"}}>حصة واحدة</h2>
+        <h2 style={{color:"#1D4F90",textAlign:"center",margin:"50px 50px"}}>حصة واحدة</h2>
         <ProductList products={singleProducts} />
       </div>
 
       <div ref={familyRef}>
-        <h2  style={{color:"#1D4F90",textAlign:"center"}}>عبوات عائلية</h2>
+        <h2  style={{color:"#1D4F90",textAlign:"center",margin:"50px 50px"}}>عبوات عائلية</h2>
         <ProductList products={familyProducts} />
       </div>
 
       <div ref={eventRef}>
-        <h2  style={{color:"#1D4F90",textAlign:"center"}}>عبوات للمناسبات</h2>
+        <h2  style={{color:"#1D4F90",textAlign:"center",margin:"50px 50px"}}>عبوات للمناسبات</h2>
         <ProductList products={eventProducts} />
       </div>
     </Container>
